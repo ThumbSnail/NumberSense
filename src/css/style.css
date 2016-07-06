@@ -1,0 +1,149 @@
+
+body {
+	background-color: #404242;
+	margin: 0;
+}
+
+#container {
+	max-width: 830px;
+	margin: auto;
+	background-color: #fff;
+	padding: 10px 20px 10px 20px;
+}
+
+/*  Digits Area  */
+
+#digits {
+	display: inline-block;
+	margin: 0px 5px 5px;
+}
+
+#button-container {
+	display: inline-block;
+}
+
+button {
+	height: 32px;
+	font-size: small;
+	margin: 0 0 0 5px;
+}
+
+#new-round {
+	margin-left: 5px;
+}
+
+input {
+	height: 26px;
+	margin-top: 10px;
+	font-size: small;
+}
+
+/*  Chart Area  */
+
+#chart-title {
+	margin-bottom: 10px;
+}
+
+#chart-container {
+	overflow: auto;
+}
+
+#chart {
+	width: 830px;  /* (32 * 20) + (10 * 19) */
+	height: 200px;
+	color: #fff;
+	text-align: center;
+}
+
+  /*  Chart Pieces  */
+
+#row-bar {
+	height: 90%;
+	background: linear-gradient(0deg, #fff, #ddd);
+	border-radius: 10px 10px 0 0;
+}
+
+.bar-container {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	cursor: pointer;
+}
+
+.bar {
+	position: absolute;
+	bottom: 0;
+	background-color: #4D2079;
+	width: 100%;
+	overflow: hidden;
+}
+
+.bar:hover {
+	opacity: .5;
+}
+
+.bar-animate {
+	transition: height 1s ease-in-out;
+}
+
+.spacing {
+	width: 32px;
+	margin-right: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+#row-integers {
+	background-color: #26b67c;
+	border-radius: 0 0 10px 10px;
+}
+
+.integer {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#c19, #i19 {
+	margin-right: 0;
+}
+
+/*  Search Area  */
+
+#digits-entry {
+	width: 50px;
+	margin: 0 0 0 5px;
+}
+
+#integer-entry {
+	width: 50px;
+}
+
+/*  Solutions List Area  */
+
+#list-header {
+	margin: 15px 0 10px 0;
+}
+
+a {
+	color: #00d;
+}
+
+#list-container {
+	max-width: 830px;
+	height: 240px;
+	overflow: scroll;
+}
+
+ol {
+	margin: 0;
+}
+
+p:first-of-type {
+	margin-top: 0;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
