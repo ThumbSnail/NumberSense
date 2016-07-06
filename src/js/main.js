@@ -729,11 +729,32 @@ var View = function() {
 			}
 		});
 
+		txtDigitsEntry.addEventListener('keyup', function(event) {
+			event.preventDefault();
+			if (event.keyCode === 13) {  //'Enter' key
+				btnChooseDigits.click();
+			}
+		});
+
 		btnSearch.addEventListener('click', searchForSolution);
 
 		txtIntegerEntry.addEventListener('input', function() {
 			if (this.value.length > 2) {
 				this.value = '';
+			}
+		});
+
+		txtIntegerEntry.addEventListener('keyup', function(event) {
+			event.preventDefault();
+			if (event.keyCode === 13) {  //'Enter' key
+				btnSearch.click();
+			}
+		});
+
+		txtExpressionEntry.addEventListener('keyup', function(event) {
+			event.preventDefault();
+			if (event.keyCode === 13) {  //'Enter' key
+				btnSearch.click();
 			}
 		});
 	}
@@ -835,6 +856,9 @@ var View = function() {
 
 			strOutput = '<p>Not a solution in the list.</p>';
 
+			//eval can't handle something like '2 2'.  The space followed by another number throws an error.
+			//It must be expecting an operator.  Quick fix = remove all spaces from the expression:
+			strExpression = strExpression.replace(/\s/g, '');
 			var testExpression = eval(strExpression);
 			if (testExpression !== parseInt(strInteger)) {
 				strOutput += '<p>Also, that expression does not equal ' + strInteger + '.</p>';
