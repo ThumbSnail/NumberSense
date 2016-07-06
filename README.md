@@ -1,10 +1,10 @@
 ##Number Sense
 
-1.  How to View:
+**A. How to View:**
 
-[http://thumbsnail.githib.io/NumberSense](http://thumbsnail.githib.io/NumberSense)
+[http://thumbsnail.github.io/NumberSense](http://thumbsnail.github.io/NumberSense)
 
-2.  Description:
+**B. Description:**
 
 Based on [Magoosh's Number Sense](http://magoosh.com/gmat/2012/number-sense-for-the-gmat/).
 
