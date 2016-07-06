@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Sense</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<h2 id="digits">Calculating...</h2>
+		<div id="button-container">
+			<button id="new-round">New Random Digits</button>
+			<input id="digits-entry" class="hide" type="text" placeholder="####" maxlength="4">
+			<button id="user-digits">Choose New Digits</button>
+		</div>
+		<h3 id="chart-title">Number of Solutions for Each Integer from 1 to 20</h3>
+		<div id="chart-container">
+			<div id="chart"></div>
+		</div>
+		<div id="search-area">
+			<input id="expression-entry" type="text" placeholder="1 + 2 + 3 + 4" maxlength="20">
+			=
+			<input id="integer-entry" type="text" placeholder="10" maxlength="2">
+			<button id="search">Check Solution</button>
+		</div>
+		<h3 id="list-header"><a href="http://magoosh.com/gmat/2012/number-sense-for-the-gmat/" target="_blank">Magoosh's Number Sense</a></h3>
+		<div id="list-container">
+			<p>Using each of the four digits at the top once, construct an expression that evaluates to an integer between 1 and 20 via any combination of the following operators:</p>
+			<ul>
+				<li>addition +</li>
+				<li>subtraction -</li>
+				<li>multiplication *</li>
+				<li>division /</li>
+				<li>parentheses ()</li>
+				<li>Note: operators can be repeated.  Ex:  1 + 2 + 3 + 4</li>
+			</ul>
+			<p>Example: Given the digits 1 2 3 4, one possible expression that evaluates to 9 is:  4 * (2 + 1) - 3.</p>
+			<p>Click on any bar or integer on the Solutions chart to see a list of solutions for that integer.</p>
+		</div>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>
